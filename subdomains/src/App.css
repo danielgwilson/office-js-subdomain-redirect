@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+}
+
+.App-header-puddle {
+  background-image: url(https://ak0.picdn.net/shutterstock/videos/7657750/thumb/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 33vh;
+}
+
+.App-header-contoso {
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/D8qa-2E/breathtaking-helicopter-shot-of-modern-city-panorama-view-new-york-city-background_v_ifusw9g__F0000.png);
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 33vh;
+}
+
+.App-header-acme {
+  background-image: url(https://cdn.dribbble.com/users/2767/screenshots/813284/ff_acmetest_dribbble2.jpg);
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 33vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Compound-Button {
+  margin-top: 20px;
+  min-width: 280px;
+}
