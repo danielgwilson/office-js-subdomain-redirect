@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "name": "office-js-subdomain-redirect-root",
+  "builds": [{ "src": "puddle.html", "use": "@now/html-minifier" }]
+}

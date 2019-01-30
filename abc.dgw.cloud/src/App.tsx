@@ -8,20 +8,25 @@ import {
 class App extends Component<any, any> {
   constructor(props: any) {
     super(props);
-    this.state = { range: "" };
+    this.state = {
+      range: "",
+      abc: window.location.hostname == "abc.dgw.cloud"
+    };
+    this._redirect = this._redirect.bind(this);
     this._getRange = this._getRange.bind(this);
   }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className={this.state.abc ? "App-header" : "App-header-alt"}>
           <p>
-            Welcome to <code>abc.dgw.cloud!</code>
+            Welcome to <code>{window.location.hostname}!</code>
           </p>
         </header>
         <div>
           <p>
-            Redirect to <code>xyz.dgw.cloud</code>
+            Redirect to{" "}
+            <code>{this.state.abc ? "xyz.dgw.cloud" : "abc.dgw.cloud"}</code>
           </p>
           <PrimaryButton style={{}} text="Redirect" onClick={this._redirect} />
         </div>
@@ -35,7 +40,9 @@ class App extends Component<any, any> {
   }
 
   private _redirect(): void {
-    window.location.replace("https://xyz.dgw.cloud");
+    window.location.replace(
+      this.state.abc ? "https://xyz.dgw.cloud" : "https://abc.dgw.cloud"
+    );
   }
 
   private _getRange(): void {
