@@ -8,6 +8,7 @@
         "@types/office-js": "^0.0.147",
         "@types/react": "16.7.20",
         "@types/react-dom": "16.0.11",
+        "office-ui-fabric-react": "^6.131.0",
         "react": "^16.7.0",
         "react-dom": "^16.7.0",
         "react-scripts": "2.1.3",
